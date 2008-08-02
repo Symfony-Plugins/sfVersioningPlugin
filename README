@@ -1,0 +1,64 @@
+= sfVersioningPlugin =
+
+== Overview ==
+
+sfVersioningPlugin is a Symfony plugin. sfVersioning plugin helps you to manage the versioning of your project.
+
+== Installation ==
+
+You can install sfVersioningPlugin via PEAR (recommended) package manager or manually.
+
+=== PEAR installation ===
+
+ 1. The easiest way to install sfVersioningPlugin is to use PEAR package manager.
+
+{{{
+$ symfony plugin-install http://plugins.symfony-project.com/sfVersioningPlugin 
+}}}
+
+ Alternatively, if you don't have PEAR installed, you can download the latest package attached to this plugin's wiki page and extract it under your project's `plugins/` directory. You will also have to copy the contents of the `myproject/plugins/sfIconPlugin/web/` directory into a `myproject/web/sfIconPlugin/` directory.
+
+ 2. Now clear the cache with symfony clear-cache command to enable the autoloading to find the new classes:
+
+{{{
+$ symfony cc
+}}}
+
+== Usage (tasks) ==
+
+ 1. symfony versioning-list
+ 
+ 2. symfony versioning-create-new VERSION [COMMENT]
+
+== Usage (helper) ==
+
+ 1. versioning_get()
+
+ 2. versioning_mantis_link_to($mantis_url,$label='BUG')
+
+== Changelog ==
+2008-08-02: 0.1.1 beta
+ * License changed from GPL to LGPL
+
+2008-07-07: 0.1.0 beta
+ * Initial release
+
+== Todo ==
+
+ * SVN staff to automatically creates a new tag version
+
+ * Automatic changelog staff
+
+ * Plugin module versioning used to display all versions with infos
+
+== Contacts ==
+
+If you have any questions or feedback feel free to contact me at [mailto:piccioli@netseven.it].
+
+Please include sfVersioningPlugin in the mail subject, this will help me tracking the conversation.
+
+
+== License ==
+
+sfVersioningPlugin is a symfony plugin created by Alessio Piccioli.
+For the full copyright and license information, please view the LICENSE file that was distributed with this source code.

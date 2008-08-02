@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.11" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfVersioningPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>symfony sfVersioningPlugin plugin</summary>
+ <description>sfVersioningPlugin is a Symfony plugin. sfVersioning plugin helps you to manage the versioning of your project.</description>
+ <lead>
+  <name>Alessio Piccioli</name>
+  <user>piccioli</user>
+  <email>piccioli@netseven.it</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-08-02</date>
+ <time>12:00:00</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL license</license>
+ <notes>-</notes>
+
+<contents>
+<dir name="/">
+ <file role="data" name="LICENSE" />
+ <file role="data" name="README" />
+
+ <dir name="data">
+
+  <dir name="tasks">
+   <file role="data" name="sfVersioningTask.php" />
+  </dir>
+ </dir>
+
+ <dir name="lib">
+  <file role="data" name="sfVersioningUtils.php" />
+
+  <dir name="helper">
+   <file role="data" name="sfVersioningHelper.php" />
+  </dir>
+ </dir>
+
+ <dir name="web">
+   <file role="data" name=".none" />
+ </dir>
+</dir>
+</contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.0.0</min>
+    <max>1.1.0</max>
+    <exclude>1.1.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog />
+</package>
+
